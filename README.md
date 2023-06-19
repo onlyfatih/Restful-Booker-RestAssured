@@ -1,7 +1,8 @@
-API Test Projesi
+### API Test Projesi
 
 Bu proje, Restful Booker sitesi üzerinde otel rezervasyonu oluşturma ve rezervasyonu iptal etme işlemlerini test etmek için RestAssured ve Cucumber kullanılarak Java dilinde IntelliJ IDEA üzerinde geliştirilmiştir.
-Proje İçeriği
+
+### Proje İçeriği
 
 Proje aşağıdaki senaryoyu gerçekleştirmek için tasarlanmıştır:
 Senaryo: Kullanıcı olarak otel rezervasyonu oluşturabilirim
@@ -18,7 +19,7 @@ Kurulum
     IntelliJ IDEA veya tercih ettiğiniz bir Java IDE'si indirin ve yükleyin.
     Bu projeyi GitHub'dan indirin veya kaynak kodunu kopyalayın.
 
-Proje Yapısı
+### Proje Yapısı
 
 Proje aşağıdaki dosya ve klasörlerden oluşur:
 
@@ -30,7 +31,7 @@ Proje aşağıdaki dosya ve klasörlerden oluşur:
             resources: Test senaryolarının Cucumber özellik dosyalarının bulunduğu klasör.
     pom.xml: Maven proje yapılandırma dosyası.
 
-Nasıl Çalıştırılır
+### Nasıl Çalıştırılır
 
     IntelliJ IDEA'yi açın.
     Projeyi açmak için "Open" veya "Import" seçeneklerini kullanın ve projenin bulunduğu dizini seçin.
@@ -38,7 +39,7 @@ Nasıl Çalıştırılır
     Test senaryolarını çalıştırmak için src/test/java/runners klasöründeki Cucumber test koşucu sınıflarını bulun ve çalıştırın.
     Senaryoların geçerli olup olmadığını ve test sonuçlarını görüntüleyin.
 
-Notlar
+### Notlar
 
     Senaryoları çalıştırmadan önce Restful Booker sitesine erişim sağlayabilmeniz için internet bağlantısının olduğundan emin olun.
     Restful Booker sitesine yönlendirme ve oturum açma adımları, senaryoların içerisinde yer almamaktadır. Bu adımların senaryolardan önce gerçekleştirildiğinden emin olun.
