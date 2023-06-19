@@ -1,48 +1,48 @@
-# Restful-Booker Otel Rezervasyonu Test Otomasyonu
+API Test Projesi
 
-Bu proje, Restful-Booker adlı bir otel rezervasyonu API'sini test etmek için geliştirilmiş bir Selenium ve Cucumber tabanlı test otomasyonudur. Java programlama dili kullanılarak IntelliJ IDEA geliştirme ortamında yazılmıştır.
+Bu proje, Restful Booker sitesi üzerinde otel rezervasyonu oluşturma ve rezervasyonu iptal etme işlemlerini test etmek için RestAssured ve Cucumber kullanılarak Java dilinde IntelliJ IDEA üzerinde geliştirilmiştir.
+Proje İçeriği
 
-## Özellikler
+Proje aşağıdaki senaryoyu gerçekleştirmek için tasarlanmıştır:
+Senaryo: Kullanıcı olarak otel rezervasyonu oluşturabilirim
 
-- Kullanıcı yeni bir rezervasyon oluşturabilir.
-- Kullanıcı rezervasyon için gerekli bilgileri sağlar.
-- Kullanıcı oluşturulan rezervasyonu iptal edebilir.
+    Verilen bir kullanıcı yeni bir rezervasyon oluşturur.
+    Kullanıcı, rezervasyon için gerekli bilgileri girer.
+    Kullanıcı otel rezervasyonunu oluşturur.
+    Rezervasyonun başarıyla oluşturulduğu doğrulanır.
+    Kullanıcı oluşturulan rezervasyonu iptal eder.
 
-## Gereksinimler
+Kurulum
 
-- Java 8 veya üzeri
-- IntelliJ IDEA veya başka bir Java IDE
-- Selenium WebDriver
-- Cucumber
-- Restful-Booker API erişimi
+    Bu proje Java 8 ve üzeri bir Java Development Kit (JDK) gerektirir. İnternet bağlantısı gerekebilir.
+    IntelliJ IDEA veya tercih ettiğiniz bir Java IDE'si indirin ve yükleyin.
+    Bu projeyi GitHub'dan indirin veya kaynak kodunu kopyalayın.
 
-## Kurulum
+Proje Yapısı
 
-1. Bu projeyi GitHub'dan indirin veya kopyalayın.
-2. IntelliJ IDEA veya tercih ettiğiniz Java IDE'de projeyi açın.
-3. İlgili bağımlılıkları otomatik olarak indirecek olan Maven proje bağımlılıklarını güncelleyin.
-4. Restful-Booker API erişimine sahip olduğunuzdan emin olun.
-5. Test senaryolarını içeren `src/test/java` klasörünü açın.
-6. İstediğiniz test senaryosunu seçin ve çalıştırın.
+Proje aşağıdaki dosya ve klasörlerden oluşur:
 
-## Kullanım
+    src: Kaynak kodun bulunduğu klasör.
+        test: Test senaryolarının ve yardımcı sınıfların bulunduğu klasör.
+            java: Java sınıflarının bulunduğu klasör.
+                steps: Senaryo adımlarının uygulandığı Cucumber adım tanımları.
+                runners: Cucumber senaryolarını çalıştırmak için kullanılan test koşucu sınıfları.
+            resources: Test senaryolarının Cucumber özellik dosyalarının bulunduğu klasör.
+    pom.xml: Maven proje yapılandırma dosyası.
 
-1. Test senaryolarını içeren `src/test/java` klasöründe bulunan dosyaları inceleyin.
-2. Her test senaryosu için ayrı ayrı parametrelerin nasıl ayarlanacağını ve hangi adımların izleneceğini anlamak için ilgili dosyaların içeriğini inceleyin.
-3. Restful-Booker API'sini kullanarak otel rezervasyonu işlemlerini otomatikleştirmek için mevcut senaryoları temel alabilir ve gerektiğinde özelleştirebilirsiniz.
+Nasıl Çalıştırılır
 
-## Katkıda Bulunma
+    IntelliJ IDEA'yi açın.
+    Projeyi açmak için "Open" veya "Import" seçeneklerini kullanın ve projenin bulunduğu dizini seçin.
+    Maven bağımlılıklarının otomatik olarak yüklenmesini bekleyin.
+    Test senaryolarını çalıştırmak için src/test/java/runners klasöründeki Cucumber test koşucu sınıflarını bulun ve çalıştırın.
+    Senaryoların geçerli olup olmadığını ve test sonuçlarını görüntüleyin.
 
-1. Bu projeyi fork edin.
-2. Yeni bir dal (branch) oluşturun: `git checkout -b yeni-ozellik`
-3. Değişikliklerinizi yapın ve bunları kaydedin: `git commit -am 'Yeni özellik eklendi'`
-4. Dalınıza gönderin: `git push origin yeni-ozellik`
-5. Bir Pull Request oluşturun.
+Notlar
 
-## Lisans
+    Senaryoları çalıştırmadan önce Restful Booker sitesine erişim sağlayabilmeniz için internet bağlantısının olduğundan emin olun.
+    Restful Booker sitesine yönlendirme ve oturum açma adımları, senaryoların içerisinde yer almamaktadır. Bu adımların senaryolardan önce gerçekleştirildiğinden emin olun.
 
-Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasını inceleyin.
+Bu README dosyası, API Test Projesi'nin kullanımını anlatmak için hazırlanmıştır. Projenin daha fazla ayrıntısına kaynak kodu ve belgelendirmesiyle ulaşabilirsiniz.
 
----
-
-Bu README şablonunu kullanarak kendi proje detaylarını
+İyi testler!
