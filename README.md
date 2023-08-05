@@ -1,49 +1,48 @@
-### API Test Projesi
+# API Test Project
 
-Bu proje, Restful Booker sitesi üzerinde otel rezervasyonu oluşturma ve rezervasyonu iptal etme işlemlerini test etmek için RestAssured ve Cucumber kullanılarak Java dilinde IntelliJ IDEA üzerinde geliştirilmiştir.
+This project is developed using **RestAssured** and **Cucumber** with **Java** language on **IntelliJ IDEA**, to test the hotel reservation creation and cancellation processes on the Restful Booker website.
 
-### Proje İçeriği
+## Project Content
 
-Proje aşağıdaki senaryoyu gerçekleştirmek için tasarlanmıştır:
-Senaryo: Kullanıcı olarak otel rezervasyonu oluşturabilirim
+The project is designed to perform the following scenario:
+Scenario: As a User, I can create a hotel reservation
 
-    Verilen bir kullanıcı yeni bir rezervasyon oluşturur.
-    Kullanıcı, rezervasyon için gerekli bilgileri girer.
-    Kullanıcı otel rezervasyonunu oluşturur.
-    Rezervasyonun başarıyla oluşturulduğu doğrulanır.
-    Kullanıcı oluşturulan rezervasyonu iptal eder.
+    Given a user creates a new reservation.
+    When the user enters the necessary information for the reservation.
+    And the user creates the hotel reservation.
+    Then the successful creation of the reservation is confirmed.
+    And the user cancels the created reservation.
 
-Kurulum
+## Installation
 
-    Bu proje Java 8 ve üzeri bir Java Development Kit (JDK) gerektirir. İnternet bağlantısı gerekebilir.
-    IntelliJ IDEA veya tercih ettiğiniz bir Java IDE'si indirin ve yükleyin.
-    Bu projeyi GitHub'dan indirin veya kaynak kodunu kopyalayın.
+This project requires Java 8 or higher Java Development Kit (JDK). Internet connection may be required.
+Download and install IntelliJ IDEA or your preferred Java IDE.
+Download this project from GitHub or copy the source code.
 
-### Proje Yapısı
+## Project Structure
 
-Proje aşağıdaki dosya ve klasörlerden oluşur:
+The project consists of the following files and folders:
 
-    src: Kaynak kodun bulunduğu klasör.
-        test: Test senaryolarının ve yardımcı sınıfların bulunduğu klasör.
-            java: Java sınıflarının bulunduğu klasör.
-                steps: Senaryo adımlarının uygulandığı Cucumber adım tanımları.
-                runners: Cucumber senaryolarını çalıştırmak için kullanılan test koşucu sınıfları.
-            resources: Test senaryolarının Cucumber özellik dosyalarının bulunduğu klasör.
-    pom.xml: Maven proje yapılandırma dosyası.
+- src: The folder where the source code is located.
+    - test: The folder containing test scenarios and helper classes.
+        - java: The folder containing Java classes.
+            - steps: Cucumber step definitions where the scenario steps are implemented.
+            - runners: Test runner classes used to run Cucumber scenarios.
+        - resources: The folder containing Cucumber feature files for test scenarios.
+- pom.xml: Maven project configuration file.
 
-### Nasıl Çalıştırılır
+## How to Run
 
-    IntelliJ IDEA'yi açın.
-    Projeyi açmak için "Open" veya "Import" seçeneklerini kullanın ve projenin bulunduğu dizini seçin.
-    Maven bağımlılıklarının otomatik olarak yüklenmesini bekleyin.
-    Test senaryolarını çalıştırmak için src/test/java/runners klasöründeki Cucumber test koşucu sınıflarını bulun ve çalıştırın.
-    Senaryoların geçerli olup olmadığını ve test sonuçlarını görüntüleyin.
+1. Open IntelliJ IDEA.
+2. Use "Open" or "Import" options to open the project and select the directory where the project is located.
+3. Wait for Maven dependencies to be automatically loaded.
+4. To run the test scenarios, find and run the Cucumber test runner classes in the `src/test/java/runners` folder.
+5. Check the validity of the scenarios and view the test results.
 
-### Notlar
+## Notes
 
-    Senaryoları çalıştırmadan önce Restful Booker sitesine erişim sağlayabilmeniz için internet bağlantısının olduğundan emin olun.
-    Restful Booker sitesine yönlendirme ve oturum açma adımları, senaryoların içerisinde yer almamaktadır. Bu adımların senaryolardan önce gerçekleştirildiğinden emin olun.
+- Make sure you have internet access to reach the Restful Booker website before running the scenarios.
+- Redirecting to the Restful Booker website and logging in are not included in the scenarios. Ensure that these steps are performed before the scenarios.
 
-Bu README dosyası, API Test Projesi'nin kullanımını anlatmak için hazırlanmıştır. Projenin daha fazla ayrıntısına kaynak kodu ve belgelendirmesiyle ulaşabilirsiniz.
+This README file is prepared to explain the usage of the API Test Project. For more details about the project, you can refer to the source code and documentation.
 
-İyi testler!
